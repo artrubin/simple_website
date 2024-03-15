@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <!--Linking Styles CSS below-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking Google Fonts below-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Creating a container below to apply style to all pages if required -->
+    <div class="main-container">
+
+        <header class="page-header">
+            <!--Image Source: canva.com, Paid Professional Subscription -->
+            <a href="index.html"><img src="logo.png" alt="Website Logo" class="logo"></a>
+            <h1 class="company-name">Vets and Pets</h1>
+        </header>
+
+        <p class="slogan">Where Compassion Meets Care: Your Trusted Veterinary Clinic</p>
+
+        <!--Inserting a line -->
+        <hr>
+
+        <!--Creating a Navbar -->
+        <nav>
+            <ul class="ul-horizontal">
+                <li class="li-horizontal"><a class="menu" href="index.html">HOME</a></li>
+                <li class="li-horizontal"><a class="menu" href="page2.html">ABOUT</a></li>
+                <li class="li-horizontal"><a class="menu" href="page3.html">SERVICES</a></li>
+                <li class="li-horizontal"><a class="menu" href="page4.html">APPOINTMENT</a></li>
+            </ul>
+        </nav>
+
+        
+        <!--Creating an appointment container -->
+        <div class="appointment-container">
+            <!--Appointment Header -->
+            <h3>Need to visit us?</h3>
+            <!--Appointment Paragraph -->
+            <p>Fill out the form below to book an appointment</p>
+            <!--Appointment Form -->
+            <form action="mailto:artem.chaykovskyy@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="fname" placeholder="Please enter your name" minlength="3" maxlength="20" required><br>
+                <input type="text" name="phonenumber" placeholder="Please enter your phone number" minlength="10" maxlength="10" required><br>
+                <input type="email" name="email" placeholder="Please enter your email" required><br>
+                <p>Have you visited us before?</p>
+                <input type="Radio"name="sub">
+                <label>No</label>
+                <input type="Radio"name="sub">
+                <label>Yes</label><br><br>
+                <label for="dropdown-day">Choose preferred day:</label><br>
+                <select id="dropdown-day" required><br>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                </select><br>
+                <label for="dropdown-time">Choose preferred time:</label><br>
+                <select id="dropdown-time" required><br>
+                    <option value="9AM">9AM</option>
+                    <option value="10AM">10AM</option>
+                    <option value="11AM">11AM</option>
+                    <option value="12AM">12AM</option>
+                    <option value="1PM">1PM</option>
+                    <option value="2PM">2PM</option>
+                    <option value="3PM">3PM</option>
+                    <option value="4PM">4PM</option>
+                    <option value="5PM">5PM</option>
+                    </select><br>
+                    <p>Would you like to leave some additional comments?</p>
+                <textarea name="comments" cols="78" rows="10" required></textarea><br>
+                <input type="checkbox" name="tc">
+                <label>I agree to your T&C</label>
+                <input type="checkbox" name="tc">
+                <label>I want to subscribe to your monthly newsletter</label><br>
+                <input type="submit" value="Make an appointment" id="make-an-appointment">
+            </form>
+        </div>
+        <!--Inserting a line -->
+        <hr>
+        <!--Creating a footer -->
+        <footer>
+            <!--Footer Paragraph -->
+            <p>All rights reserved.&nbsp;2023&nbsp;&nbsp;<a href="index.html">vetsandpets.com</a></p>
+            <!--Footer Paragraph -->
+            <p>Author: Artem Chaykovskyy</p>
+        </footer>
+    </div>
+</body>
+</html>
